@@ -99,6 +99,6 @@ class main:
                 self.ListarTarefas.remove(i)
                 print("item excluido")
 
-
+main().v_menu()
 
 
