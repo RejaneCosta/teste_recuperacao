@@ -14,7 +14,7 @@ class main:
         self.ExcluirTarefas = []
         self.Sair = []
 
-    def v_menu(self):
+    def v_Inicio(self):
         menu = 0
         while (menu != 99):
             print("-----> MENU <-----")
@@ -25,9 +25,10 @@ class main:
             print("05 - Criar Tarefas")
             print("06 - Listar Tarefas")
             print("07 - Excluir Tarefas")
-            print("99 - sair")
-            menu = input("Qual a opção desejada? ")
+            print("99 - Sair")
             print("----------------------")
+
+            menu = input("Qual a opção desejada? ")
 
             if(menu == "01"):
                 return self.AgendaTelefonica
@@ -78,7 +79,7 @@ class main:
     def v_CriarTarefas(self):
         AdicionarDescricao = input("Informe a descrição")
         SelecionarStatus = False
-        NovaTarefa = CriarTarefas(AdicionarDescricao, SelecionarStatus):
+        NovaTarefa = CriarTarefas(AdicionarDescricao, SelecionarStatus)
         self.CriarTarefas.append(NovaTarefa)
 
     def v_ListarTarefas(self):
@@ -99,6 +100,6 @@ class main:
                 self.ListarTarefas.remove(i)
                 print("item excluido")
 
-main().v_menu()
+main().v_Inicio()
 
 
